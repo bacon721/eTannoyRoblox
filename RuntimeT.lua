@@ -1,10 +1,4 @@
-local s = script.Parent.Parent.Config:FindFirstChild("TannoyManager")
-s.Parent = game.StarterPlayer.StarterPlayerScripts
-s.Enabled = true
-game.Players.PlayerAdded:Connect(function(plr)
-	plr:SetAttribute("Locked",false)
-end)
-task.wait(0.2,2)
+
 local folder = script.Parent
 local conf = folder.Parent:WaitForChild("Config",10)
 local AIP = false
